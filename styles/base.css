@@ -6,6 +6,21 @@ p, a, li, span{
     font-family:"Schibsted Grotesk";
 }
 
+header{
+    background-color: #174e70;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    margin: 0.5em;
+
+}
+
+main{
+    max-width:100%;
+}
+
 
 nav{
     background-color: #333333;
@@ -82,7 +97,8 @@ main{
 }
 
 footer{
+    padding:0.5em;
     display: block;
     background-color: #174e70;
-    
+    text-align: center;
 }
