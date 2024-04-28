@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Shared Israel Ordaz Santillan</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Shared Israel Ordaz Santillan, A brief information about me">
     <meta name="author" content="Shared Ordaz">
     <link rel="stylesheet" href="styles/base.css">
@@ -12,26 +12,31 @@
 <body>
     <header>
         <h1>WDD 131: Dynamic Web Fundamentals - <span style="color:yellow;">Shared I. Ordaz</span></h1>
-    </header>
-    <nav>
+        <nav>
         <ul>
             <li><a href="https://www.linkedin.com/in/sharedordaz/">LinkedIn</a></li>
             <li><a href="https://byui.instructure.com/">I-Learn</a></li>
-            <li><a href="#">Scripture</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a></li>
             <li><a href="#">Final Project</a></li>
 
         </ul>
-    </nav>
+        </nav>
+    </header>
+
     <main>
     <section class='card'>
         <h2>About Me</h2>
-        <p>My name is Shared and i like to play the piano, read books and play videogames. I am from Mexico and i love my country. I actually work as an english and piano teacher. My dream is to work to the open source community creating projects for linux</p>
-        <h3>Mexico</h3>
-        <p>Mexico is a country full of culture. It was the result of the conquest of the spanyards over the Aztec Empire. Spain inherited the predominant catholic religion to the country and many of the musical and gastronomical tradition. Now, Mexico is one of the biggest countries of latin america, having a population of 127.5 million of people aproximately</p>
-        <img id="myPhoto" src="images/me.jpg" alt="A photo of me">
+        <div>
+            <p>My name is Shared and i like to play the piano, read books and play videogames. I am from Mexico and i love my country. I actually work as an english and piano teacher. My dream is to work to the open source community creating projects for linux</p>
+            <img id="myPhoto" src="images/me.jpg" alt="A photo of me">
+            <h3>Mexico</h3>
+            <p>Mexico is a country full of culture. It was the result of the conquest of the spanyards over the Aztec Empire. Spain inherited the predominant catholic religion to the country and many of the musical and gastronomical tradition. Now, Mexico is one of the biggest countries of latin america, having a population of 127.5 million of people aproximately</p>
+            <img id="mexFlag" src="images/mexico-flag.jpg" alt="The flag of Mexico">
+        </div>
     </section>
     <section id="web-dev-resources" class='card'>
         <h2>Web Dev Resources</h2>
+        <div>
         <ul>
             <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
             <li><a href="https://coolors.co/" target="_blank">Coolors</a></li>
@@ -40,12 +45,14 @@
             <li><a href="https://github.com/" target="_blank">Git Hub</a></li>
 
         </ul>
+        </div>
     </section>
-    <main>
+    </main>
 
     <footer>
         <p><span id='currentyear'></span>&copy; 2024 Shared Israel Ordaz Santillan, Mexico</p>
         <p id='lastModified'></p>
     </footer>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>

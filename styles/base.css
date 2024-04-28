@@ -1,4 +1,65 @@
-#myPhoto{
+nav{
+    background-color: #333333;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    flex: 1;
+    padding: 1em;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color:#666666;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #174e70;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+}
+
+.card > :not(div){
+    padding:0.2em;
+}
+
+.card div{
+    background-color: white;
+}
+
+.card div p{
+    padding:1em;
+}
+.card h2, .card h3{
+   color: #edfcff;
+   top:0;
+   border-radius:5px;
+   font-size: 24px;
+   text-align: center;
+
+}
+
+.card p {
+   color:#333333; 
+   font-size:18px; 
+}
+.card img{
     max-width:150px;
-    float: right;
+}
+
+footer{
+    background-color: #174e70;
+    
 }
