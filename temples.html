@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shared Ordaz">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan+SC&display=swap" rel="stylesheet">
+
+
     <title>Temple Album</title>
 </head>
 <body>
@@ -14,22 +21,24 @@
         <a href="#">Small</a>
     </header>
 
-    <main class="gallery">
+    <main>
+        <h1>Temple Album</h1>
+        <div class="gallery">
         <!-- Repeat this block for each image -->
-        <div class="thumbnail">
-            <img src="path-to-image1.jpg" alt="San Diego California">
-            <p>San Diego California</p>
-        </div>
-        <!-- End of block -->
+        <figure>
+          <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure> 
+            <!-- End of block -->
 
         <!-- Repeat for other images -->
-
+        </div>
     </main>
 
     <footer>
-        &copy; 2024 Rubia Magdalena Francesco @ MadagasCar
-        <br>
-        Last Modification: 21/09/2024 18:37:41
+        <p>&copy; <span id='currentyear'></span> Shared Israel Ordaz Santillan, Mexico</p>
+        <p id='lastModified'></p>
     </footer>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
