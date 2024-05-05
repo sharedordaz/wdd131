@@ -9,3 +9,6 @@ hamburgerButton.addEventListener('click', () => {
         hamburgerButton.classList.toggle('activeBurger');
     });
 });
+
+const myAudio = document.querySelector("audio"); // Replace "myAudio" with your actual audio element ID
+myAudio.muted = false;
