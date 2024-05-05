@@ -7,7 +7,31 @@
         margin:-10px;
     }
 
-    nav a:not(.hamburguer){
-        visibility: collapse;
+    .activeBurger{
+        position: relative;
+        bottom: 10vw;
+        left: 40vw;
+        
+        margin: -0.8em;
+        padding: 0;
+        max-width: 1em;
+        display: inline;
     }
+
+    .linkHidden{
+        visibility: collapse;
+
+    }
+
+    .linkShow{
+        display:block;
+        visibility: visible;
+
+    }
+
+    nav:has(> .linkShow){
+    flex-direction: column;
+    }
+
+
 }
