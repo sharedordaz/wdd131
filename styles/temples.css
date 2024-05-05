@@ -6,4 +6,8 @@
         padding: 0px;
         margin:-10px;
     }
+
+    nav a:not(.hamburguer){
+        visibility: collapse;
+    }
 }
