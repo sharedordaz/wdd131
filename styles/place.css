@@ -97,13 +97,20 @@ footer {
     padding: 10px 0;
 }
 
-@media only screen and (min-width:1000px){
+@media only screen and (min-width:900px){
 .data, .weather{
-    background-color: #FFFFFF55;
+    background-color: #FFFFFFBB;
     position: absolute;
+    font-size: 1.3vw;
+    padding: 1em;
 }
 
 .data{
-    top:0;
+    top: 15vw;
+}
+
+.weather{
+    top: 15vw;
+    left: 60vw;
 }
 }
