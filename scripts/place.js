@@ -12,6 +12,10 @@ const fetchWeatherData = async () => {
       if (data.cod === 200) { // Check for successful response (code 200)
         const weatherList = document.getElementById('weather-data');
 
+        function calculateWindChill(temperature, windSpeed) {
+            return Math.round(13.12 + 0.6215 * temperature - 11.37 * windSpeed**0.16 + 0.3965 * temperature * windSpeed**0.16);
+        }
+
         function createWeatherItem(label, value) {
           const weatherItem = document.createElement('li');
           weatherItem.classList.add('weather-item');
@@ -28,6 +32,9 @@ const fetchWeatherData = async () => {
           createWeatherItem(label, data.main[key]);
         }
 
+        createWeatherItem('Wind Speed', data.wind.speed);
+          if (data.main.temp <=10 && data.wind.speed > 4.8){
+        createWeatherItem('WindChill', calculateWindChill(data.main.temp, data.wind.speed))}
         // Add other weather data items as needed
         // ... (e.g., visibility, wind speed)
       } else {
