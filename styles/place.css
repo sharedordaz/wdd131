@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan+SC&display=swap');
 :root {
-  --black: #050505;
-  --blue-munsell: #1B9AAA;
-  --bone: #DDDCBC;
-  --old-lace: #F5F1E3;
+  --black: #095256;
+  --blue-munsell: #095256;
+  --bone: #DBF9F0;
+  --old-lace: #F7F9F7;
   --white: #FFFFFF;
-  --formal-black: #333;
+  --formal-black: #750D37;
 
   background-color: var(--bone);
   width: 100vw;
@@ -23,6 +23,16 @@ img {
 
 h1, h2, h3{
     font-family: 'Sedan SC', cooperplate;
+    color: var(--black);
+}
+
+header{
+    background-color:var(--formal-black);
+    text-align:center;
+}
+header h1{
+    font-size:2em;
+    color:var(--old-lace);
 }
 
 main{
