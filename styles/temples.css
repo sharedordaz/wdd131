@@ -1,0 +1,37 @@
+
+@media (max-width: 481px) {
+    .hamburguer{
+        visibility: visible;
+        font-size:3em;
+        padding: 0px;
+        margin:-10px;
+    }
+
+    .activeBurger{
+        position: relative;
+        bottom: 10vw;
+        left: 40vw;
+        
+        margin: -0.8em;
+        padding: 0;
+        max-width: 1em;
+        display: inline;
+    }
+
+    .linkHidden{
+        visibility: collapse;
+
+    }
+
+    .linkShow{
+        display:block;
+        visibility: visible;
+
+    }
+
+    nav:has(> .linkShow){
+    flex-direction: column;
+    }
+
+
+}
