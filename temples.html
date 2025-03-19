@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shared Ordaz">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Temple Album">
+
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan+SC&display=swap" rel="stylesheet">
+
+
+    <title>Temple Album</title>
+</head>
+<body>
+    <header >
+        <nav class="navbar">
+        <h1>Temple Album</h1>
+        <a class="hamburguer" >☰</a>
+        <a class="linkHidden" href="#">Home</a>
+        <a class="linkHidden" href="#">Old</a>
+        <a class="linkHidden" href="#">New</a>
+        <a class="linkHidden" href="#">Large</a>
+        <a class="linkHidden" href="#">Small</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temple Gallery</h2>
+        <div class="gallery">
+        <figure>
+          <img src="images/temples/MexCity.jpg" alt="CDMX Temple" >
+          <figcaption>CDMX Temple.</figcaption>
+        </figure> 
+        <figure>
+            <img src="images/temples/placeholder.png" alt="Trulli" >
+            <figcaption>Placeholder.</figcaption>
+          </figure> 
+
+          <figure>
+            <img src="images/temples/placeholder.png" alt="Trulli" >
+            <figcaption>Placeholder.</figcaption>
+          </figure> 
+          <figure>
+            <img src="images/temples/placeholder.png" alt="Trulli" >
+            <figcaption>Placeholder.</figcaption>
+          </figure> 
+
+          <figure>
+            <img src="images/temples/placeholder.png" alt="Trulli" >
+            <figcaption>Placeholder.</figcaption>
+          </figure>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id='currentyear'></span> Shared Israel Ordaz Santillan, Mexico</p>
+        <p id='lastModified'></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" ></script>
+
+</body>
+</html>
