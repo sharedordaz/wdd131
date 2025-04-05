@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shared Ordaz">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Place">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan+SC&display=swap" rel="stylesheet">
+
+
+    <title>Place: Mexico</title>
+</head>
+<body>
+    <header >
+        <h1>Place: Mexico</h1>
+    </header>
+    <div class="banner">
+    <picture>
+        <source media="(max-width:650px)" srcset="images/place/landscape-small.webp">
+        <img src="images/place/landscape.webp" alt="Landscape" >
+    </picture>
+    </div>
+
+    <main>
+        <div class="data">
+        <h1>Mexico</h1>
+<ul class="mexico-facts">
+        <li><strong>Population:</strong> Approximately 130.1 million people<sup>[1]</sup></li>
+        <li><strong>Per Capita GDP:</strong> $23,654 USD<sup>[1]</sup></li>
+        <li><strong>Real GDP Growth Rate:</strong> Projected to be 2.0%<sup>[2]</sup></li>
+        <li><strong>Agricultural Land:</strong> 74,269,000 hectares<sup>[1]</sup></li>
+  </ul>
+        </div>
+        <div class='weather'>
+          
+          <h2>Weather</h2>
+          <img src='images/place/weather-icon.svg' alt="weather-symbol" width=100>
+          <ul id="weather-data" class="weather-list">
+
+
+          </ul>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>&copy; <span id='currentyear'></span> Shared Israel Ordaz Santillan, Mexico</p>
+        <p id='lastModified'></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer ></script>
+
+</body>
+</html>
