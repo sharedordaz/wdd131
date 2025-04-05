@@ -96,6 +96,10 @@ footer {
     color: white;
     padding: 10px 0;
 }
+
+.banner img{
+    width: 100%;
+}
 #weather_mobile{
     visibility:visible;
     align-self: center;
