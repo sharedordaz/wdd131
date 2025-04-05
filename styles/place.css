@@ -96,7 +96,14 @@ footer {
     color: white;
     padding: 10px 0;
 }
+#weather_mobile{
+    visibility:visible;
+    align-self: center;
+}
 
+#weather_desktop{
+    visibility:hidden;
+}
 @media only screen and (min-width:900px){
 .data, .weather{
     background-color: #FFFFFFBB;
@@ -111,6 +118,18 @@ footer {
 
 .weather{
     top: 15vw;
-    left: 60vw;
+    left: 50vw;
+    display:flex;
+    flex-direction: row;
+}
+
+#weather_mobile{
+    visibility:hidden;
+    width:1px;
+}
+
+#weather_desktop{
+    visibility:visible;
+    font-size: 8em;
 }
 }
