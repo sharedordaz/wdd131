@@ -1,5 +1,6 @@
 const currentYear = new Date().getFullYear();
 
+
 // Get the last modified date of the document
 const lastModifiedDate = new Date(document.lastModified);
 
