@@ -21,6 +21,8 @@ function createNewCard(name, location, date, area, imageUrl) {
     image.src = imageUrl;
     image.alt = name;
     image.loading = "lazy";
+    image.style.width = '400px';
+    image.style.height = '200px';
 
     list.append(cardLocation, cardDate, cardArea);
     card.append(cardName, image, list);
