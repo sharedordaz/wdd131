@@ -20,6 +20,7 @@ function createNewCard(name, location, date, area, imageUrl) {
     let image = document.createElement("img")
     image.src = imageUrl;
     image.alt = name;
+    image.loading = "lazy";
 
     list.append(cardLocation, cardDate, cardArea);
     card.append(cardName, image, list);
