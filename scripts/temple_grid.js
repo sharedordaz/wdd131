@@ -11,19 +11,26 @@ function createNewCard(name, location, date, area, imageUrl) {
     list.className = "cardList";
 
     let cardLocation = document.createElement("li")
-    cardLocation.textContent = location;
+    cardLocation.textContent = `Location: ${location}`;
     let cardDate = document.createElement("li")
-    cardDate.textContent = date;
+    cardDate.textContent = `Dedication date: ${date}`;
     let cardArea = document.createElement("li")
-    cardArea.textContent = area;
+    cardArea.textContent = `Area: ${area}`;
     let image = document.createElement("img")
     image.src = imageUrl;
+    image.alt = name;
 
     list.append(cardLocation, cardDate, cardArea);
     card.append(cardName, image, list);
     return card;
 }
 
-let dummyCard = createNewCard("Temple Name", "Mexico City", "Dummy Date", "area", "images/temples/placeholder.png" );
+//let dummyCard = createNewCard("Temple Name", "Mexico City", "Dummy Date", "area", "images/temples/placeholder.png" );
 
-galleryContainer.append(dummyCard);
+//galleryContainer.append(dummyCard);
+
+temples.forEach(element => {
+    let newCard = createNewCard(element.name, element.location, element.dedicated, element.area, element.imageUrl);
+    galleryContainer.append(newCard);
+});
+
