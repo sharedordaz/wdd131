@@ -1,0 +1,26 @@
+.gallery{
+    gap: 5%;
+    overflow:scroll;
+}
+.cardIteration{
+    background-color: #333;
+    border: 1px solid black;
+
+    border-radius: 5%;
+}
+
+.cardList li{
+    color: white;
+    font-size: 0.9em;
+}
+
+.cardIteration img{
+    width: 100%;
+    height:50%;
+}
+
+.cardIteration h4{
+    color:white;
+    align-self: center;
+    justify-self: center;
+}

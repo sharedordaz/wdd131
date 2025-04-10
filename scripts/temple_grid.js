@@ -4,7 +4,8 @@ let galleryContainer = document.querySelector(".gallery");
 
 function createNewCard(name, location, date, area, imageUrl) {
     let card = document.createElement("div");
-    let cardName = document.createElement("h1")
+    card.className = "cardIteration";
+    let cardName = document.createElement("h4")
     cardName.textContent = name;
 
     let list = document.createElement("ul")
@@ -15,7 +16,7 @@ function createNewCard(name, location, date, area, imageUrl) {
     let cardDate = document.createElement("li")
     cardDate.textContent = `Dedication date: ${date}`;
     let cardArea = document.createElement("li")
-    cardArea.textContent = `Area: ${area}`;
+    cardArea.textContent = `Area: ${area} sq ft`;
     let image = document.createElement("img")
     image.src = imageUrl;
     image.alt = name;
@@ -30,7 +31,7 @@ function createNewCard(name, location, date, area, imageUrl) {
 //galleryContainer.append(dummyCard);
 
 temples.forEach(element => {
-    let newCard = createNewCard(element.name, element.location, element.dedicated, element.area, element.imageUrl);
+    let newCard = createNewCard(element.templeName, element.location, element.dedicated, element.area, element.imageUrl);
     galleryContainer.append(newCard);
 });
 
