@@ -1,4 +1,4 @@
-const temples = [
+export const temples = [
   {
     templeName: "Aba Nigeria",
     location: "Aba, Nigeria",
@@ -74,8 +74,8 @@ const temples = [
   {
     templeName: "Kyiv Ukraine",
     location: "Kyiv, Ukraine",
-    dedicated: "Announced (Not yet dedicated)",
-    area: null,
+    dedicated: "2010, August 29",
+    area: 22184,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/kyiv-ukraine-temple/kyiv-ukraine-temple-3988-thumb.jpg"
   }
