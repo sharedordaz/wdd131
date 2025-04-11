@@ -1,6 +1,7 @@
 import { temples } from "./temples_array.js";
 
-let galleryContainer = document.querySelector(".gallery");
+const galleryContainer = document.querySelector(".gallery");
+const navLinks = document.querySelectorAll(".navbar .linkHidden");
 
 function createNewCard(name, location, date, area, imageUrl) {
     let card = document.createElement("div");
@@ -29,12 +30,64 @@ function createNewCard(name, location, date, area, imageUrl) {
     return card;
 }
 
-//let dummyCard = createNewCard("Temple Name", "Mexico City", "Dummy Date", "area", "images/temples/placeholder.png" );
+function filterTemples(filterType) {
+    let filteredTemples = [];
+    
+    switch(filterType) {
+        case 'Old':
+            filteredTemples = temples.filter(temple => {
+                const year = parseInt(temple.dedicated.split(',')[0]);
+                return year < 1900;
+            });
+            break;
+        case 'New':
+            filteredTemples = temples.filter(temple => {
+                const year = parseInt(temple.dedicated.split(',')[0]);
+                return year > 2000;
+            });
+            break;
+        case 'Large':
+            filteredTemples = temples.filter(temple => temple.area > 90000);
+            break;
+        case 'Small':
+            filteredTemples = temples.filter(temple => temple.area < 10000);
+            break;
+        default: // 'Home'
+            filteredTemples = temples;
+    }
+    
+    renderTemples(filteredTemples);
+}
 
-//galleryContainer.append(dummyCard);
+function renderTemples(templesArray) {
+    galleryContainer.innerHTML = ''; // Clear current content
+    
+    if (templesArray.length === 0) {
+        galleryContainer.innerHTML = '<p class="no-results">No temples match the current filter.</p>';
+        return;
+    }
+    
+    templesArray.forEach(element => {
+        let newCard = createNewCard(
+            element.templeName, 
+            element.location, 
+            element.dedicated, 
+            element.area, 
+            element.imageUrl
+        );
+        galleryContainer.append(newCard);
+    });
+}
 
-temples.forEach(element => {
-    let newCard = createNewCard(element.templeName, element.location, element.dedicated, element.area, element.imageUrl);
-    galleryContainer.append(newCard);
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const filterType = e.target.textContent;
+        filterTemples(filterType);
+        
+        navLinks.forEach(lnk => lnk.classList.remove('active'));
+        e.target.classList.add('active');
+    });
 });
 
+filterTemples('Home');
