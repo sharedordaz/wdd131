@@ -21,9 +21,4 @@ document.addEventListener('DOMContentLoaded', function() {
         productSelect.appendChild(option);
     });
     
-    // Set tabindex for better keyboard navigation
-    const formElements = document.querySelectorAll('input, select, textarea, button');
-    formElements.forEach((element, index) => {
-        element.setAttribute('tabindex', index + 1);
-    });
 });
