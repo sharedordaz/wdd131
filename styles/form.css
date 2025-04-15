@@ -112,7 +112,7 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-    background-color: #3498db;
+    background-color: #164f75;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -122,7 +122,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #2980b9;
+    background-color: #092436;
 }
 
 /* Confirmation Page */
