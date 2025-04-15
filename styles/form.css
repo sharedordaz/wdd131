@@ -113,7 +113,7 @@ input[type="checkbox"] {
 
 input[type="submit"] {
     background-color: #164f75;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 12px 20px;
     font-size: 16px;
