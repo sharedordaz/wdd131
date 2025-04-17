@@ -5,6 +5,7 @@ const student = {
     class: "WDD131"
   };
 
+  function printName(){
   let footer = document.querySelector('footer');
   let b = document.createElement('b');
 
@@ -13,3 +14,5 @@ const student = {
   b.textContent = `Student: ${student.firstName} ${student.lastName} - Assigment of ${student.class} at ${student.school}`;
 
   footer.append(b);
+  }
+  printName();
