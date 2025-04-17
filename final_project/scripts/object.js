@@ -5,6 +5,8 @@ const student = {
     class: "WDD131"
   };
 
+
+  //OBJECT AND FUNCTION
   function printName(){
   let footer = document.querySelector('footer');
   let b = document.createElement('b');
