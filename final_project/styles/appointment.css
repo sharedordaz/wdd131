@@ -89,3 +89,29 @@ form {
   button:hover {
     background-color: var(--myorange);
   }
+
+@media (max-width: 480px) {
+    form {
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+  
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+    }
+  
+    .gender-symbol {
+      font-size: 1.25rem;
+      padding: 0.5rem 0.6rem;
+    }
+  
+    button {
+      font-size: 0.95rem;
+      padding: 0.6rem;
+    }
+  }
