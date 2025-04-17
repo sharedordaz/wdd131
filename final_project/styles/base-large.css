@@ -286,7 +286,7 @@ footer a:hover{
 #about_us img{
     flex: 1;
     max-width: 400px;
-    width: 100%;
+    width: 400px;
     height: auto;
     border-radius: 1rem;
     object-fit: cover;

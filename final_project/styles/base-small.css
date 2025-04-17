@@ -53,6 +53,10 @@
         margin:1em;
     }
 
+    #about_us div{
+        flex-direction:column-reverse;
+    }
+
     /*FOOTER*/
     footer{
         flex-direction: column;
