@@ -263,3 +263,31 @@ footer a:hover{
 #username{
     text-align: center;
 }
+
+#about_us:hover{
+    transform: translateY(-10px);
+    transition: 1s;
+}
+
+#about_us div{
+    display:flex;
+}
+#about_us h1{
+    display:block;
+}
+
+#about_us p{
+    flex: 1;
+    min-width: 300px;
+    text-align: justify;
+    padding:2em;
+}
+
+#about_us img{
+    flex: 1;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
