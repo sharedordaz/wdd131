@@ -3,7 +3,7 @@
   --secGray: #595959ff;
   --mywhite: #f2e9dcff;
   --mygreen: #cfd11aff;
-  --myorange: rgb(161, 69, 46);
+  --myorange: rgb(207, 75, 42);
 }
 
 
@@ -20,6 +20,7 @@
 
 h1,h2,h3,h4,h5{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color:var(--mainBlue);
 }
 
 p,button, li, a, strong, i, label{
